@@ -1,6 +1,6 @@
 # Reddit India Depression — Stressor Analysis Dashboard
 
-An end-to-end data pipeline and interactive dashboard that analyses approximately 17,000 Reddit posts from Indian depression communities. The project identifies five recurring stressor categories through keyword flagging, stores enriched records in MySQL, and surfaces longitudinal and seasonal trends via a Streamlit application built on Plotly.
+An end-to-end data pipeline and interactive dashboard that analyses approximately 17,773 Reddit posts from Indian depression communities. The project identifies five recurring stressor categories through keyword flagging, stores enriched records in MySQL, and surfaces longitudinal and seasonal trends via a Streamlit application built on Plotly.
 
 ---
 
