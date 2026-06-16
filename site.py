@@ -1,19 +1,19 @@
-import streamlit as st
+import pymysql
 import pandas as pd
-import mysql.connector
-import plotly.express as px
+import streamlit as st
+import plotlyexpress as px
 
 
-def get_data(query):
-    conn = mysql.connector.connect(
+def get_data(query_string):
+    conn = pymysql.connect(
         host=st.secrets["db_host"],
         port=int(st.secrets["db_port"]),
         user=st.secrets["db_user"],
         password=st.secrets["db_password"],
         database=st.secrets["db_name"],
-        ssl_mode="REQUIRED",  # Enforces the secure connection Aiven requires
+        ssl={"ssl": {}},
     )
-    df = pd.read_sql(query, conn)
+    df = pd.read_sql(query_string, conn)
     conn.close()
     return df
 
