@@ -5,7 +5,14 @@ import plotly.express as px
 
 
 def get_data(query):
-    conn = mysql.connector.connect(user = 'root', password = '', host = '127.0.0.1', database = 'reddit')
+    conn = mysql.connector.connect(
+        host=st.secrets["db_host"],
+        port=int(st.secrets["db_port"]),
+        user=st.secrets["db_user"],
+        password=st.secrets["db_password"],
+        database=st.secrets["db_name"],
+        ssl_mode="REQUIRED",  # Enforces the secure connection Aiven requires
+    )
     df = pd.read_sql(query, conn)
     conn.close()
     return df
