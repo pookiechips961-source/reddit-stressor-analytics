@@ -8,7 +8,7 @@ An end-to-end data pipeline and interactive dashboard that analyses approximatel
 
 Mental health discussions in Indian Reddit communities reflect a distinct set of social pressures — family dynamics, workplace burnout, relationship breakdown, personal vulnerability, and the unique strain of competitive entrance examinations. This project quantifies those patterns over time so that trends can be tracked, compared, and understood at a macro level.
 
-**[View the Live Interactive Dashboard Here!](https://reddit-streappr-analytics-tv9qkk77enm3egmvqjm9nu.streamlit.app/)**
+**[View the Live Dashboard](https://reddit-streappr-analytics-tv9qkk77enm3egmvqjm9nu.streamlit.app/)**
 
 **Pipeline summary**
 
