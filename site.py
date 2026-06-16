@@ -1,7 +1,7 @@
 import pymysql
 import pandas as pd
 import streamlit as st
-import plotlyexpress as px
+import plotly.express as px
 
 
 def get_data(query_string):
