@@ -61,7 +61,7 @@ st.markdown(
 )
 st.markdown("---")
 
-st.subheader("Section A: Key Metrics Overview")
+st.subheader("Key Metrics Overview")
 
 col1, col2, col3 = st.columns(3)
 
@@ -88,7 +88,7 @@ with col3:
 st.markdown("---")
 
 
-st.subheader("Section B: Longitudinal Composition Analysis")
+st.subheader("Relative Composition Analysis")
 
 st.markdown(
     "This chart tracks how the proportion of each stressor has changed over the years. "
@@ -127,7 +127,7 @@ fig_share.update_layout(
 st.plotly_chart(fig_share, use_container_width = True)
 
 
-st.subheader("Section C: Relative Growth Velocity")
+st.subheader("Relative Growth Analysis")
 
 st.markdown(
     "This section shows whether a specific stressor is growing faster or slower than the rest of the forum. "
@@ -161,7 +161,7 @@ fig_relgrowth.update_layout(
 st.plotly_chart(fig_relgrowth, use_container_width = True)
 
 
-st.subheader("Section D: Intra-Year Seasonality and Volatility Matrix")
+st.subheader("Intra-Year Seasonality and Volatility")
 
 st.markdown(
     "This line graph highlights the regular seasonal patterns that occur throughout a single year. "
@@ -203,7 +203,7 @@ fig_volatility.update_layout(
 st.plotly_chart(fig_volatility, use_container_width = True)
 
 
-st.subheader("Section E: Categorical Interconnection and Co-occurrence Strengths")
+st.subheader("Interconnection and Co-occurrence Strengths")
 
 st.markdown(
     "This heatmap focuses on overlap, displaying how often multiple stressors show up inside the exact same post. "
